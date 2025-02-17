@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        *{
+            margin:0;
+            border:0;
+            box-sizing: border-box;
+        }
+        .headings{
+            width:100vw;
+            height:25vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 20px;
+            gap:20px;
+        }
+        .container{
+            width:100vw;
+            height:80vh;
+            background-color: antiquewhite;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(bgformedia.png);
+            background-size: cover;
+            overflow: scroll;
+            
+        }
+        .box{
+            width:300px;
+            height:55vh;
+            /* max-height:250px; */
+            background-color:antiquewhite;
+            margin:20px; 
+            margin-top:0px;
+            color:white;
+            padding:20px
+        }
+        
+        
+        .box1{
+             background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREVqDyuznb2IZOu375dRzvH1yuvQ7jP3_ASQ&s);
+            background-size:contain;
+            background-repeat:no-repeat; 
+            display: flex;
+            justify-content:center;
+            align-item:center;
+            flex-direction:column;
+            color:black;
+            border-radius: 6px;
+        } 
+       .box2{
+             background-image: url(https://ychef.files.bbci.co.uk/1280x720/p021xf3f.jpg);
+            background-size:contain;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content:center;
+            align-item:center;
+            flex-direction:column;
+            color:black;
+            border-radius: 6px;
+       }
+       .box3{
+             background-image: url(https://img.freepik.com/premium-photo/woman-running-forest-path_14117-703661.jpg);
+            background-size:contain;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content:center;
+            align-item:center;
+            flex-direction:column;
+            color:black;
+            border-radius: 6px;
+       }
+       .heada{
+        margin-top: 145px;
+       }
+       .headb{
+        margin-top: 130px;
+       }
+       .headc{
+        margin-top: 145px;
+       }
+       @media(max-width:500px)
+       {
+         flex-direction: row;
+         font-size:5px;
+           
+       }
+       @media(max-width:1000px)
+       {
+        
+        .container{
+         height:210vh;
+        flex-direction: column;
+
+          align-items:center;
+        }
+           
+       }
+        
+
+    </style>
+</head>
+<body>
+    <div class="headings">
+        <i><b>Simple Daily Habits for a Healthier Life!</b></i>
+        <p>Want to feel better every day? Try these science-backed wellness tips:</p>
+    </div>
+     
+    <div class="container">
+        <div class="box box1">
+            <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREVqDyuznb2IZOu375dRzvH1yuvQ7jP3_ASQ&s"> -->
+         <h3 class="heada"><b><i>Morning Sunlight</i></b></h3>
+         <p>Sunlight exposure in the morning helps regulate your body's internal clock (circadian rhythm). 
+            It signals your brain to reduce melatonin production, making you feel more awake and alert.
+             Morning sunlight also boosts serotonin levels, which can improve mood, increase focus, and even reduce symptoms of anxiety and depression.</p>
+        </div>
+        <div class="box box2">
+            <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREVqDyuznb2IZOu375dRzvH1yuvQ7jP3_ASQ&s"> -->
+         <h3 class="headb"><b><i>Mindfulness & Meditation – Reduces Stress and Improves Focus</i></b></h3>
+         <p>Practicing mindfulness and meditation helps you stay present in the moment,
+             reducing stress and enhancing concentration. Research shows that regular meditation can lower cortisol levels
+             (the stress hormone)</p>
+        </div>
+        <div class="box box3">
+            <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREVqDyuznb2IZOu375dRzvH1yuvQ7jP3_ASQ&s"> -->
+         <h3 class="headc"><b><i>Daily Movement – Exercise for at Least 30 Minutes to Stay Fit</i></b></h3>
+         <p>Regular physical activity boosts heart health, strengthens muscles, 
+            and enhances mental well-being by releasing endorphins (the "feel-good" hormones).
+             Exercise also helps prevent chronic diseases like diabetes and high blood pressure.Take a brisk walk or jog in the morning.</p>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
